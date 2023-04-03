@@ -1,0 +1,64 @@
+#main {
+    display: flex;
+    gap: 350px;
+    padding-top: 20px;
+    background-color: lightgray;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 500px;
+
+}
+
+.titulo1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.parrafo1 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.titulo3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#animalpicture {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#animalpicture2 {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+li { 
+    font-size: 18px;
+    margin-bottom: 5px;
+    list-style: circle;
+}
+
+#contenidoprincipal {
+    text-align: center;
+    max-width: 800px;
+}
+
+#side-bar {
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border-top:    2px solid black;
+    border-right:  2px solid black; 
+    border-bottom: 2px solid black;
+    background-color: rgb(181, 180, 180);
+ }
+
+#headersidebar {
+    font-size: 21px;
+    margin-left: -12%;
+ }

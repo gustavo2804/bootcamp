@@ -1,17 +1,19 @@
+var valorArr = [];
 var valor = 0 ;
 var operador = null;
 var total = 0;
 var numero = 0;
 
 function calculate(Num){
-         numero = parseInt(Num);
+        valorArr.push(Num);
+     numero = parseInt(valorArr.join(''));
      document.getElementById('result').value = numero;
-    console.log(numero);
 }
 
 function operacion(Opt){
     operador = Opt;
     valor = parseInt(document.getElementById('result').value);
+    valorArr = [];
 
 }
 
@@ -43,6 +45,8 @@ function clearResult(){
     total = 0;
     valor= 0;
     numero=0;
+    valorArr = [];
+    document.getElementById('result').value = 0;    
 
 
 }

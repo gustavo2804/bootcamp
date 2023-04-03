@@ -4,10 +4,14 @@ var operador = null;
 var total = 0;
 var numero = 0;
 
+function mostrar(cont){
+    document.getElementById('result').value = cont;
+}
+
 function calculate(Num){
         valorArr.push(Num);
      numero = parseInt(valorArr.join(''));
-     document.getElementById('result').value = numero;
+     mostrar(numero);
 }
 
 function operacion(Opt){
@@ -21,22 +25,22 @@ function getResult(){
     if(operador == '+'){
 
         total = valor+numero;
-        document.getElementById('result').value = total;
+        mostrar(total);
     }
     if(operador == '-'){
 
         total = valor-numero;
-        document.getElementById('result').value = total;
+        mostrar(total);
     }
     if(operador == '*'){
 
         total = valor*numero;
-        document.getElementById('result').value = total;
+        mostrar(total);
     }
     if(operador == '/'){
 
         total = (valor)/(numero);
-        document.getElementById('result').value = total;
+        mostrar(total);
     }    
 }
 
@@ -46,7 +50,7 @@ function clearResult(){
     valor= 0;
     numero=0;
     valorArr = [];
-    document.getElementById('result').value = 0;    
+    mostrar(0);
 
 
 }

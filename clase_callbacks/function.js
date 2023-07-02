@@ -8,10 +8,11 @@ function mostrar(cont){
     document.getElementById('result').value = cont;
 }
 
-function calculate(Num){
+function calculate(Num,callb){
         valorArr.push(Num);
      numero = parseInt(valorArr.join(''));
-     mostrar(numero);
+     callb(numero);
+     console.log(Num);
 }
 
 function operacion(Opt){
@@ -25,7 +26,8 @@ function getResult(){
     if(operador == '+'){
 
         total = valor+numero;
-        mostrar(total);
+        console.log(typeof(numero));
+        calculate(total,mostrar);
     }
     if(operador == '-'){
 

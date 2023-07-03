@@ -10,7 +10,7 @@ function LogIn() {
 
             
     
-        const {login} = useContext(AuthContext)    
+        const {login}:any = useContext(AuthContext)    
         const navigate = useNavigate()    
 
 
@@ -40,8 +40,10 @@ function LogIn() {
                     password:form.password
                 }
                 const response = await axios.post(url,body);
-                console.log(response.data.token, response.data.id);
-                 login(response.data.token, 
+                console.log(response.data.token, response.data.id,
+                     response.data.usuario.name,
+                    response.data.usuario.lastname);
+                 await login(response.data.token, 
                     response.data.id, 
                     response.data.usuario.name,
                     response.data.usuario.lastname)

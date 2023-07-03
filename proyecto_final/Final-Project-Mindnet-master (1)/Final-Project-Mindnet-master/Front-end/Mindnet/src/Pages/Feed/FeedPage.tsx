@@ -13,7 +13,7 @@ interface Post {
   picture: string;
 }
 
-const Feed: React.FC = () => {
+const Feed: React.FC =  () => {
   const [posts, setPosts] = useState<Post[]>([]); // State to store the posts
 
   useEffect(() => {
